@@ -1,0 +1,4 @@
+guru:
+  username: YamlQAUserName
+  password: YamlQAPassword
+  jdbcUrl: YamlQAUrl
