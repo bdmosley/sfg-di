@@ -1,10 +1,20 @@
----
 spring:
   main:
     allow-bean-definition-overriding: true
   profiles:
-    active: dog,EN
+    active:
+      - dog
+      - EN
+      - dev
 guru:
   username: YamlUserName
   password: YamlPassword
   jdbcUrl: YamlUrl
+
+---
+spring:
+  profiles: prod
+guru:
+  username: YamlProdUserName
+  password: YamlProdPassword
+  jdbcUrl: YamlProdUrl
